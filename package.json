@@ -1,0 +1,24 @@
+{
+    "name": "cnips",
+    "displayName": "CniPs",
+    "description": "An extension for generating snippets for making CP fun!",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.59.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "cpp",
+                "path": "./snippets/snippets.code-snippets"
+            },
+            {
+                "language": "cpp",
+                "path": "./snippets/input.code-snippets"
+            }
+        ]
+    }
+}

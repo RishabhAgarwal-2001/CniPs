@@ -1,0 +1,26 @@
+{
+    "long long int input": {
+        "prefix": ":input.ll",
+        "body": "long long int ${1/([^,]+)([,\\s]*|)/$1${2:+, }/g}; cin>>${1/([^,]+)([,\\s]*|)/$1${2:+>>}/g};"
+    },
+    "int input": {
+        "prefix": ":input.int",
+        "body": "int ${1/([^,]+)([,\\s]*|)/$1${2:+, }/g}; cin>>${1/([^,]+)([,\\s]*|)/$1${2:+>>}/g};"
+    },
+    "double input": {
+        "prefix": ":input.double",
+        "body": "double ${1/([^,]+)([,\\s]*|)/$1${2:+, }/g}; cin>>${1/([^,]+)([,\\s]*|)/$1${2:+>>}/g};"
+    },
+    "char input": {
+        "prefix": ":input.char",
+        "body": "char ${1/([^,]+)([,\\s]*|)/$1${2:+, }/g}; cin>>${1/([^,]+)([,\\s]*|)/$1${2:+>>}/g};"
+    },
+    "string input": {
+        "prefix": ":input.string",
+        "body": "string ${1/([^,]+)([,\\s]*|)/$1${2:+, }/g}; cin>>${1/([^,]+)([,\\s]*|)/$1${2:+>>}/g};"
+    },
+    "long int input": {
+        "prefix": ":input.li",
+        "body": "long int ${1/([^,]+)([,\\s]*|)/$1${2:+, }/g}; cin>>${1/([^,]+)([,\\s]*|)/$1${2:+>>}/g};"
+    }
+}

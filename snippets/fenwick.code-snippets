@@ -1,0 +1,33 @@
+{
+    "Fenwick Tree": {
+        "prefix": "fenwick",
+        "body": [
+            "struct FenwickTree {",
+            "    vector<long long int> bit;",
+            "    long long int n;",
+            "    FenwickTree(long long int n) {",
+            "        this->n = n;",
+            "        bit.assign(n, 0);",
+            "    }",
+            "    FenwickTree(vector<long long int> a): FenwickTree(a.size()) {",
+            "        for(long long int i=0; i<n; ++i) {",
+            "            update(i, a[i]); // Add a[i] at ith position",
+            "        }",
+            "    }",
+            "    void update(long long int position, long long int delta) {",
+            "        for(;position<n; position = position | (position + 1)) {",
+            "            bit[position] += delta;",
+            "        }",
+            "    }",
+            "    long long int sum(long long int r) {",
+            "        long long int ans = 0;",
+            "        for(; r>=0; r = (r & (r+1)) - 1) {",
+            "            ans += bit[r];",
+            "        }",
+            "        return ans;",
+            "    }",
+            "};"
+        ],
+        "description": "Fenwick Tree"
+    }
+}
